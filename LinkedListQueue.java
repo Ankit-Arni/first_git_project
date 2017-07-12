@@ -6,7 +6,7 @@ class Element
 	private Element link;
 	public Element()
 	{
-		link = NULL;
+		link = null;
 		data = 0;
 	}
 	public Element(int data, Element link)
@@ -38,13 +38,13 @@ class LinkedListOperations
 	public int size;
 	public LinkedListOperations()
 	{
-		front = NULL;
-		back = NULL;
+		front = null;
+		back = null;
 		size = 0;
 	}
 	public boolean isEmpty()
 	{
-		return front == NULL;
+		return front.equals(null);
 	}
 	public int getSize()
 	{
@@ -52,8 +52,8 @@ class LinkedListOperations
 	}
 	public void insert(int data)
 	{
-		Element ptr = new Element(data, NULL);
-		if(back == NULL)
+		Element ptr = new Element(data, null);
+		if(back.equals(null))
 		{
 			front = ptr;
 			back = ptr;
@@ -71,8 +71,8 @@ class LinkedListOperations
 			throw new NoSuchElementException("Underflow exception");
 		Element ptr = front;
 		front = ptr.getLink();
-		if(front == NULL)
-			back = NULL;
+		if(front.equals(null))
+			back = null;
 		size--;
 		return ptr.getData();
 	}

@@ -101,7 +101,7 @@ class LinkedListOperations
 	}
 }
 
-public class LinkedListQueue
+public class LLQueueAnkit
 {
 	public static void main(String[] args)
 	{

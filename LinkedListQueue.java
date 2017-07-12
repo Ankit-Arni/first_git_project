@@ -1,36 +1,3 @@
-import java.util.*;
-
-class Element
-{
-	protected int data;
-	protected Element link;
-	public Element()
-	{
-		link = null;
-		data = 0;
-	}
-	public Element(int data, Element link)
-	{
-		this.data = data;
-		this.link = link;
-	}
-	public void setData(int data)
-	{
-		this.data = data;
-	}
-	public void setLink(Element link)
-	{
-		this.link = link;
-	}
-	public int getData()
-	{
-		return this.data;
-	}
-	public Element getLink()
-	{
-		return this.link;
-	}	
-}
 
 class LinkedListOperations
 {

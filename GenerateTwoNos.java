@@ -2,7 +2,7 @@ import java.util.Random;
 
 class GenerateTwoNos
 {
-	public int randomNumber()
+	public static int randomNumber()
 	{
 		int randNum = rand.nextInt(11);
 		return randNum;
